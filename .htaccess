@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^latest\/(.*)$ /v1.0.1/$1 [R=303,L]
+RewriteRule ^(.*)$ /v1.0.1/$1 [R=303,L]
