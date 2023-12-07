@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://example.org/example-ontology-stub#"
-     xml:base="https://example.org/example-ontology-stub"
+<rdf:RDF xmlns="https://w3id.org/pmd/ont_pub_tmplt#"
+     xml:base="https://w3id.org/pmd/ont_pub_tmplt"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://example.org/example-ontology-stub">
-        <owl:versionIRI rdf:resource="https://example.org/example-ontology-stub/1.0.1"/>
+    <owl:Ontology rdf:about="https://w3id.org/pmd/ont_pub_tmplt">
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/1.0.0"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-inverses-20130430"/>
         <dc:creator>John Doe</dc:creator>
         <terms:created>2023-11-21</terms:created>
@@ -82,25 +82,25 @@
     
 
 
-    <!-- https://example.org/example-ontology-stub/exampleInverseRelation -->
+    <!-- https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation -->
 
 
-    <owl:ObjectProperty rdf:about="https://example.org/example-ontology-stub/exampleInverseRelation">
-        <owl:inverseOf rdf:resource="https://example.org/example-ontology-stub/exampleRelation"/>
-        <rdfs:domain rdf:resource="https://example.org/example-ontology-stub/ExampleClassStub"/>
-        <rdfs:range rdf:resource="https://example.org/example-ontology-stub/ExampleClassStub"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation">
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/exampleRelation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub"/>
         <rdfs:label xml:lang="en">has exampleInverseRelation</rdfs:label>
         <skos:definition xml:lang="en">An example inverse relation</skos:definition>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://example.org/example-ontology-stub/exampleRelation -->
+    <!-- https://w3id.org/pmd/ont_pub_tmplt/exampleRelation -->
 
 
-    <owl:ObjectProperty rdf:about="https://example.org/example-ontology-stub/exampleRelation">
-        <rdfs:domain rdf:resource="https://example.org/example-ontology-stub/ExampleClassStub"/>
-        <rdfs:range rdf:resource="https://example.org/example-ontology-stub/ExampleClassStub"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/ont_pub_tmplt/exampleRelation">
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub"/>
         <rdfs:label xml:lang="en">has exampleRelation</rdfs:label>
         <skos:definition xml:lang="en">An example relation</skos:definition>
     </owl:ObjectProperty>
@@ -119,11 +119,11 @@
     
 
 
-    <!-- https://example.org/example-ontology-stub/ExampleClassStub -->
+    <!-- https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub -->
 
 
-    <owl:Class rdf:about="https://example.org/example-ontology-stub/ExampleClassStub">
-        <rdfs:isDefinedBy rdf:resource="https://example.org/example-ontology-stub"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ont_pub_tmplt"/>
         <rdfs:label xml:lang="en">Example class stub</rdfs:label>
         <skos:definition xml:lang="en">An example Class</skos:definition>
     </owl:Class>
