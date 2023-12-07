@@ -44,6 +44,15 @@
 #    Object Properties
 #################################################################
 
+###  https://example.org/example-ontology-stub/exampleInverseRelation
+<https://example.org/example-ontology-stub/exampleInverseRelation> rdf:type owl:ObjectProperty ;
+                                                                   owl:inverseOf <https://example.org/example-ontology-stub/exampleRelation> ;
+                                                                   rdfs:domain <https://example.org/example-ontology-stub/ExampleClassStub> ;
+                                                                   rdfs:range <https://example.org/example-ontology-stub/ExampleClassStub> ;
+                                                                   rdfs:label "has exampleInverseRelation"@en ;
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "An example inverse relation"@en .
+
+
 ###  https://example.org/example-ontology-stub/exampleRelation
 <https://example.org/example-ontology-stub/exampleRelation> rdf:type owl:ObjectProperty ;
                                                             rdfs:domain <https://example.org/example-ontology-stub/ExampleClassStub> ;

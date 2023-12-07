@@ -82,6 +82,19 @@
     
 
 
+    <!-- https://example.org/example-ontology-stub/exampleInverseRelation -->
+
+
+    <owl:ObjectProperty rdf:about="https://example.org/example-ontology-stub/exampleInverseRelation">
+        <owl:inverseOf rdf:resource="https://example.org/example-ontology-stub/exampleRelation"/>
+        <rdfs:domain rdf:resource="https://example.org/example-ontology-stub/ExampleClassStub"/>
+        <rdfs:range rdf:resource="https://example.org/example-ontology-stub/ExampleClassStub"/>
+        <rdfs:label xml:lang="en">has exampleInverseRelation</rdfs:label>
+        <skos:definition xml:lang="en">An example inverse relation</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://example.org/example-ontology-stub/exampleRelation -->
 
 

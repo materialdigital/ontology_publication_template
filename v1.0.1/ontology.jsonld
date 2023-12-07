@@ -57,6 +57,26 @@
     "@value" : "An example Class"
   } ]
 }, {
+  "@id" : "https://example.org/example-ontology-stub/exampleInverseRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://example.org/example-ontology-stub/ExampleClassStub"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has exampleInverseRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://example.org/example-ontology-stub/ExampleClassStub"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://example.org/example-ontology-stub/exampleRelation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An example inverse relation"
+  } ]
+}, {
   "@id" : "https://example.org/example-ontology-stub/exampleRelation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {

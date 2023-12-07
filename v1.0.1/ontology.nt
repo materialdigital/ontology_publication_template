@@ -40,6 +40,14 @@
 # #################################################################
 # 
 # 
+# https://example.org/example-ontology-stub/exampleInverseRelation
+<https://example.org/example-ontology-stub/exampleInverseRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://example.org/example-ontology-stub/exampleInverseRelation> <http://www.w3.org/2002/07/owl#inverseOf> <https://example.org/example-ontology-stub/exampleRelation> .
+<https://example.org/example-ontology-stub/exampleInverseRelation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/example-ontology-stub/ExampleClassStub> .
+<https://example.org/example-ontology-stub/exampleInverseRelation> <http://www.w3.org/2000/01/rdf-schema#range> <https://example.org/example-ontology-stub/ExampleClassStub> .
+<https://example.org/example-ontology-stub/exampleInverseRelation> <http://www.w3.org/2000/01/rdf-schema#label> "has exampleInverseRelation"@en .
+<https://example.org/example-ontology-stub/exampleInverseRelation> <http://www.w3.org/2004/02/skos/core#definition> "An example inverse relation"@en .
+# 
 # https://example.org/example-ontology-stub/exampleRelation
 <https://example.org/example-ontology-stub/exampleRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://example.org/example-ontology-stub/exampleRelation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/example-ontology-stub/ExampleClassStub> .

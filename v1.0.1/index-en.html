@@ -98,6 +98,10 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
+      <a href="#/exampleInverseRelation"
+         title="https://example.org/example-ontology-stub/exampleInverseRelation">has exampleInverseRelation</a>
+   </li>
+   <li>
       <a href="#/exampleRelation"
          title="https://example.org/example-ontology-stub/exampleRelation">has exampleRelation</a>
    </li>
@@ -161,13 +165,17 @@ This section provides details for each class and property defined by Example Ont
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#/exampleRelation"
+            <a href="#/exampleInverseRelation"
+               title="https://example.org/example-ontology-stub/exampleInverseRelation">has exampleInverseRelation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/exampleRelation"
                title="https://example.org/example-ontology-stub/exampleRelation">has exampleRelation</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#/exampleRelation"
+            <a href="#/exampleInverseRelation"
+               title="https://example.org/example-ontology-stub/exampleInverseRelation">has exampleInverseRelation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/exampleRelation"
                title="https://example.org/example-ontology-stub/exampleRelation">has exampleRelation</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -177,10 +185,47 @@ This section provides details for each class and property defined by Example Ont
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
+         <a href="#/exampleInverseRelation"
+            title="https://example.org/example-ontology-stub/exampleInverseRelation">has exampleInverseRelation</a>
+      </li>
+      <li>
          <a href="#/exampleRelation"
             title="https://example.org/example-ontology-stub/exampleRelation">has exampleRelation</a>
       </li>
    </ul>
+   <div class="entity" id="/exampleInverseRelation">
+      <h3>has exampleInverseRelation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://example.org/example-ontology-stub/exampleInverseRelation</p>
+      <div class="comment">
+         <span class="markdown">An example inverse relation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/ExampleClassStub"
+                  title="https://example.org/example-ontology-stub/ExampleClassStub">Example class stub</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/ExampleClassStub"
+                  title="https://example.org/example-ontology-stub/ExampleClassStub">Example class stub</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#/exampleRelation"
+                  title="https://example.org/example-ontology-stub/exampleRelation">has exampleRelation</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="/exampleRelation">
       <h3>has exampleRelation<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -204,6 +249,12 @@ This section provides details for each class and property defined by Example Ont
                <a href="#/ExampleClassStub"
                   title="https://example.org/example-ontology-stub/ExampleClassStub">Example class stub</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#/exampleInverseRelation"
+                  title="https://example.org/example-ontology-stub/exampleInverseRelation">has exampleInverseRelation</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
