@@ -93,8 +93,13 @@ Diese Ontologie beinhaltet die folgenden Klassen und Eigenschaften.</span>
 <h4>Klassen</h4>
 <ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
-      <a href="#ExampleClassStub"
-         title="https://example.org/example-ontology-stub#ExampleClassStub">Example class stub</a>
+      <a href="#/ExampleClassStub"
+         title="https://example.org/example-ontology-stub/ExampleClassStub">Example class stub</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#/exampleRelation"
+         title="https://example.org/example-ontology-stub/exampleRelation">has exampleRelation</a>
    </li>
 </ul><h4>Annotation Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
@@ -105,6 +110,11 @@ Diese Ontologie beinhaltet die folgenden Klassen und Eigenschaften.</span>
    <li>
       <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
          <span>creator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition">
+         <span>definition</span>
       </a>
    </li>
    <li>
@@ -128,23 +138,75 @@ Dieser Abschnitt enth&auml;lt Details f&uuml;r jede Klasse und jedes definierte 
    <h3 id="classes-headline" class="list">Klassen</h3>
    <ul class="hlist">
       <li>
-         <a href="#ExampleClassStub"
-            title="https://example.org/example-ontology-stub#ExampleClassStub">Example class stub</a>
+         <a href="#/ExampleClassStub"
+            title="https://example.org/example-ontology-stub/ExampleClassStub">Example class stub</a>
       </li>
    </ul>
-   <div class="entity" id="ExampleClassStub">
+   <div class="entity" id="/ExampleClassStub">
       <h3>Example class stub<sup class="type-c" title="Klasse">c</sup>
          <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://example.org/example-ontology-stub#ExampleClassStub</p>
+         <strong>IRI:</strong> https://example.org/example-ontology-stub/ExampleClassStub</p>
+      <div class="comment">
+         <span class="markdown">An example Class</span>
+      </div>
       <dl class="definedBy">
          <dt>ist definiert durch</dt>
          <dd>
             <a href="https://example.org/example-ontology-stub">https://example.org/example-ontology-stub</a>
          </dd>
       </dl>
+      <dl class="description">
+         <dt>ist in der Domäne von</dt>
+         <dd>
+            <a href="#/exampleRelation"
+               title="https://example.org/example-ontology-stub/exampleRelation">has exampleRelation</a>
+            <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+         </dd>
+         <dt>ist in Range von</dt>
+         <dd>
+            <a href="#/exampleRelation"
+               title="https://example.org/example-ontology-stub/exampleRelation">has exampleRelation</a>
+            <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h2>Objekt Eigenschaften</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#/exampleRelation"
+            title="https://example.org/example-ontology-stub/exampleRelation">has exampleRelation</a>
+      </li>
+   </ul>
+   <div class="entity" id="/exampleRelation">
+      <h3>has exampleRelation<sup class="type-op" title="Objekt Eigenschaft">op</sup>
+         <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://example.org/example-ontology-stub/exampleRelation</p>
+      <div class="comment">
+         <span class="markdown">An example relation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>hat Domäne</dt>
+            <dd>
+               <a href="#/ExampleClassStub"
+                  title="https://example.org/example-ontology-stub/ExampleClassStub">Example class stub</a>
+               <sup class="type-c" title="Klasse">c</sup>
+            </dd>
+            <dt>hat Range</dt>
+            <dd>
+               <a href="#/ExampleClassStub"
+                  title="https://example.org/example-ontology-stub/ExampleClassStub">Example class stub</a>
+               <sup class="type-c" title="Klasse">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
 </div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      id="annotationproperties">
@@ -158,6 +220,11 @@ Dieser Abschnitt enth&auml;lt Details f&uuml;r jede Klasse und jedes definierte 
       <li>
          <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
             <span>creator</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition">
+            <span>definition</span>
          </a>
       </li>
       <li>
@@ -187,6 +254,14 @@ Dieser Abschnitt enth&auml;lt Details f&uuml;r jede Klasse und jedes definierte 
       <p>
          <strong>IRI:</strong> http://purl.org/dc/elements/1.1/creator</p>
    </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#definition">
+      <h3>definition<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup>
+         <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#definition</p>
+   </div>
    <div class="entity" id="http://purl.org/dc/terms/license">
       <h3>license<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup>
          <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a>
@@ -207,6 +282,7 @@ Dieser Abschnitt enth&auml;lt Details f&uuml;r jede Klasse und jedes definierte 
 <h2>Legende <span class="backlink"> zur&uuml;ck zu <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
 <sup class="type-c" title="Klassen">c</sup>: Klassen <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 </div>
 </div>
 </div>

@@ -8,6 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://example.org/example-ontology-stub">
         <owl:versionIRI rdf:resource="https://example.org/example-ontology-stub/1.0.1"/>
@@ -62,6 +63,37 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://example.org/example-ontology-stub/exampleRelation -->
+
+
+    <owl:ObjectProperty rdf:about="https://example.org/example-ontology-stub/exampleRelation">
+        <rdfs:domain rdf:resource="https://example.org/example-ontology-stub/ExampleClassStub"/>
+        <rdfs:range rdf:resource="https://example.org/example-ontology-stub/ExampleClassStub"/>
+        <rdfs:label xml:lang="en">has exampleRelation</rdfs:label>
+        <skos:definition xml:lang="en">An example relation</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -74,12 +106,13 @@
     
 
 
-    <!-- https://example.org/example-ontology-stub#ExampleClassStub -->
+    <!-- https://example.org/example-ontology-stub/ExampleClassStub -->
 
 
-    <owl:Class rdf:about="https://example.org/example-ontology-stub#ExampleClassStub">
+    <owl:Class rdf:about="https://example.org/example-ontology-stub/ExampleClassStub">
         <rdfs:isDefinedBy rdf:resource="https://example.org/example-ontology-stub"/>
         <rdfs:label xml:lang="en">Example class stub</rdfs:label>
+        <skos:definition xml:lang="en">An example Class</skos:definition>
     </owl:Class>
 </rdf:RDF>
 
