@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://example.org/example-ontology-stub","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://example.org/example-ontology-stub","name":"Example Ontology Stub", "headline":"Example Ontology Stub", "datePublished":"2023-11-21", "version":"1.0.0", "license":"http://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"John Doe"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/pmd/ont_pub_tmplt","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/pmd/ont_pub_tmplt","name":"Example Ontology Stub", "headline":"Example Ontology Stub", "datePublished":"2023-11-21", "version":"1.0.0", "license":"http://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"John Doe"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -60,7 +60,7 @@ $(function(){
 
 <dl>
 <dt>Diese Version:</dt>
-<dd><a href="https://w3id.org/pmd/co/2.0.6">https://w3id.org/pmd/co/2.0.6</a></dd>
+<dd><a href="https://w3id.org/pmd/ont_pub_tmplt/1.0.0">https://w3id.org/pmd/ont_pub_tmplt/1.0.0</a></dd>
 <dt>Revision:</dt>
 <dd>1.0.0</dd>
 <dt>Autoren:</dt>
@@ -72,7 +72,7 @@ $(function(){
 <dt>Download Serialisierung:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>Lizenz:</dt><dd><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-http://creativecommons.org/licenses/by/4.0/-blue.svg" alt="http://creativecommons.org/licenses/by/4.0/" /></a>
 </dd><dt>Visualisierung:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Zitieren als:</dt>
-<dd>John Doe. Example Ontology Stub. Revision: 1.0.0. Retrieved from: https://w3id.org/pmd/co/2.0.6</dd>
+<dd>John Doe. Example Ontology Stub. Revision: 1.0.0. Retrieved from: https://w3id.org/pmd/ont_pub_tmplt/1.0.0</dd>
 </dl>
 
 <a href="provenance/provenance-de.html" target="_blank">Ursprung dieser Seite</a><hr/>
@@ -93,8 +93,17 @@ Diese Ontologie beinhaltet die folgenden Klassen und Eigenschaften.</span>
 <h4>Klassen</h4>
 <ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
-      <a href="#ExampleClassStub"
-         title="https://example.org/example-ontology-stub#ExampleClassStub">Example class stub</a>
+      <a href="#/ExampleClassStub"
+         title="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub">Example class stub</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#/exampleInverseRelation"
+         title="https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation">has exampleInverseRelation</a>
+   </li>
+   <li>
+      <a href="#/exampleRelation"
+         title="https://w3id.org/pmd/ont_pub_tmplt/exampleRelation">has exampleRelation</a>
    </li>
 </ul><h4>Annotation Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
@@ -105,6 +114,11 @@ Diese Ontologie beinhaltet die folgenden Klassen und Eigenschaften.</span>
    <li>
       <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
          <span>creator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition">
+         <span>definition</span>
       </a>
    </li>
    <li>
@@ -128,23 +142,122 @@ Dieser Abschnitt enth&auml;lt Details f&uuml;r jede Klasse und jedes definierte 
    <h3 id="classes-headline" class="list">Klassen</h3>
    <ul class="hlist">
       <li>
-         <a href="#ExampleClassStub"
-            title="https://example.org/example-ontology-stub#ExampleClassStub">Example class stub</a>
+         <a href="#/ExampleClassStub"
+            title="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub">Example class stub</a>
       </li>
    </ul>
-   <div class="entity" id="ExampleClassStub">
+   <div class="entity" id="/ExampleClassStub">
       <h3>Example class stub<sup class="type-c" title="Klasse">c</sup>
          <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://example.org/example-ontology-stub#ExampleClassStub</p>
+         <strong>IRI:</strong> https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub</p>
+      <div class="comment">
+         <span class="markdown">An example Class</span>
+      </div>
       <dl class="definedBy">
          <dt>ist definiert durch</dt>
          <dd>
-            <a href="https://example.org/example-ontology-stub">https://example.org/example-ontology-stub</a>
+            <a href="https://w3id.org/pmd/ont_pub_tmplt">https://w3id.org/pmd/ont_pub_tmplt</a>
          </dd>
       </dl>
+      <dl class="description">
+         <dt>ist in der Domäne von</dt>
+         <dd>
+            <a href="#/exampleInverseRelation"
+               title="https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation">has exampleInverseRelation</a>
+            <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#/exampleRelation"
+               title="https://w3id.org/pmd/ont_pub_tmplt/exampleRelation">has exampleRelation</a>
+            <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+         </dd>
+         <dt>ist in Range von</dt>
+         <dd>
+            <a href="#/exampleInverseRelation"
+               title="https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation">has exampleInverseRelation</a>
+            <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#/exampleRelation"
+               title="https://w3id.org/pmd/ont_pub_tmplt/exampleRelation">has exampleRelation</a>
+            <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h2>Objekt Eigenschaften</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#/exampleInverseRelation"
+            title="https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation">has exampleInverseRelation</a>
+      </li>
+      <li>
+         <a href="#/exampleRelation"
+            title="https://w3id.org/pmd/ont_pub_tmplt/exampleRelation">has exampleRelation</a>
+      </li>
+   </ul>
+   <div class="entity" id="/exampleInverseRelation">
+      <h3>has exampleInverseRelation<sup class="type-op" title="Objekt Eigenschaft">op</sup>
+         <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation</p>
+      <div class="comment">
+         <span class="markdown">An example inverse relation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>hat Domäne</dt>
+            <dd>
+               <a href="#/ExampleClassStub"
+                  title="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub">Example class stub</a>
+               <sup class="type-c" title="Klasse">c</sup>
+            </dd>
+            <dt>hat Range</dt>
+            <dd>
+               <a href="#/ExampleClassStub"
+                  title="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub">Example class stub</a>
+               <sup class="type-c" title="Klasse">c</sup>
+            </dd>
+            <dt>ist inverse zu</dt>
+            <dd>
+               <a href="#/exampleRelation"
+                  title="https://w3id.org/pmd/ont_pub_tmplt/exampleRelation">has exampleRelation</a>
+               <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/exampleRelation">
+      <h3>has exampleRelation<sup class="type-op" title="Objekt Eigenschaft">op</sup>
+         <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/pmd/ont_pub_tmplt/exampleRelation</p>
+      <div class="comment">
+         <span class="markdown">An example relation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>hat Domäne</dt>
+            <dd>
+               <a href="#/ExampleClassStub"
+                  title="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub">Example class stub</a>
+               <sup class="type-c" title="Klasse">c</sup>
+            </dd>
+            <dt>hat Range</dt>
+            <dd>
+               <a href="#/ExampleClassStub"
+                  title="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub">Example class stub</a>
+               <sup class="type-c" title="Klasse">c</sup>
+            </dd>
+            <dt>ist inverse zu</dt>
+            <dd>
+               <a href="#/exampleInverseRelation"
+                  title="https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation">has exampleInverseRelation</a>
+               <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
 </div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      id="annotationproperties">
@@ -158,6 +271,11 @@ Dieser Abschnitt enth&auml;lt Details f&uuml;r jede Klasse und jedes definierte 
       <li>
          <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
             <span>creator</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition">
+            <span>definition</span>
          </a>
       </li>
       <li>
@@ -187,6 +305,14 @@ Dieser Abschnitt enth&auml;lt Details f&uuml;r jede Klasse und jedes definierte 
       <p>
          <strong>IRI:</strong> http://purl.org/dc/elements/1.1/creator</p>
    </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#definition">
+      <h3>definition<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup>
+         <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#definition</p>
+   </div>
    <div class="entity" id="http://purl.org/dc/terms/license">
       <h3>license<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup>
          <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a>
@@ -207,6 +333,7 @@ Dieser Abschnitt enth&auml;lt Details f&uuml;r jede Klasse und jedes definierte 
 <h2>Legende <span class="backlink"> zur&uuml;ck zu <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
 <sup class="type-c" title="Klassen">c</sup>: Klassen <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 </div>
 </div>
 </div>

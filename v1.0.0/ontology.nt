@@ -1,12 +1,12 @@
-<https://example.org/example-ontology-stub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://example.org/example-ontology-stub> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/pmd/co/2.0.6> .
-<https://example.org/example-ontology-stub> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov-o-inverses-20130430> .
-<https://example.org/example-ontology-stub> <http://purl.org/dc/elements/1.1/creator> "John Doe" .
-<https://example.org/example-ontology-stub> <http://purl.org/dc/terms/created> "2023-11-21" .
-<https://example.org/example-ontology-stub> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
-<https://example.org/example-ontology-stub> <http://purl.org/dc/terms/title> "Example Ontology Stub"@en .
-<https://example.org/example-ontology-stub> <http://www.w3.org/2000/01/rdf-schema#comment> "Example Ontology Stub"@en .
-<https://example.org/example-ontology-stub> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://w3id.org/pmd/ont_pub_tmplt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/pmd/ont_pub_tmplt> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/pmd/ont_pub_tmplt/1.0.0> .
+<https://w3id.org/pmd/ont_pub_tmplt> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov-o-inverses-20130430> .
+<https://w3id.org/pmd/ont_pub_tmplt> <http://purl.org/dc/elements/1.1/creator> "John Doe" .
+<https://w3id.org/pmd/ont_pub_tmplt> <http://purl.org/dc/terms/created> "2023-11-21" .
+<https://w3id.org/pmd/ont_pub_tmplt> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/pmd/ont_pub_tmplt> <http://purl.org/dc/terms/title> "Example Ontology Stub"@en .
+<https://w3id.org/pmd/ont_pub_tmplt> <http://www.w3.org/2000/01/rdf-schema#comment> "Example Ontology Stub"@en .
+<https://w3id.org/pmd/ont_pub_tmplt> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
 # 
 # 
 # #################################################################
@@ -28,6 +28,33 @@
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation
+<https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/pmd/ont_pub_tmplt/exampleRelation> .
+<https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> .
+<https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> .
+<https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation> <http://www.w3.org/2000/01/rdf-schema#label> "has exampleInverseRelation"@en .
+<https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation> <http://www.w3.org/2004/02/skos/core#definition> "An example inverse relation"@en .
+# 
+# https://w3id.org/pmd/ont_pub_tmplt/exampleRelation
+<https://w3id.org/pmd/ont_pub_tmplt/exampleRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmd/ont_pub_tmplt/exampleRelation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> .
+<https://w3id.org/pmd/ont_pub_tmplt/exampleRelation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> .
+<https://w3id.org/pmd/ont_pub_tmplt/exampleRelation> <http://www.w3.org/2000/01/rdf-schema#label> "has exampleRelation"@en .
+<https://w3id.org/pmd/ont_pub_tmplt/exampleRelation> <http://www.w3.org/2004/02/skos/core#definition> "An example relation"@en .
+# 
 # 
 # 
 # #################################################################
@@ -37,9 +64,10 @@
 # #################################################################
 # 
 # 
-# https://example.org/example-ontology-stub#ExampleClassStub
-<https://example.org/example-ontology-stub#ExampleClassStub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://example.org/example-ontology-stub#ExampleClassStub> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://example.org/example-ontology-stub> .
-<https://example.org/example-ontology-stub#ExampleClassStub> <http://www.w3.org/2000/01/rdf-schema#label> "Example class stub"@en .
+# https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub
+<https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pmd/ont_pub_tmplt> .
+<https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> <http://www.w3.org/2000/01/rdf-schema#label> "Example class stub"@en .
+<https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> <http://www.w3.org/2004/02/skos/core#definition> "An example Class"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
