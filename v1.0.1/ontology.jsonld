@@ -37,7 +37,7 @@
     "@id" : "http://www.w3.org/ns/prov-o-inverses-20130430"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/1.0.0"
+    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/1.0.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "1.0.1"

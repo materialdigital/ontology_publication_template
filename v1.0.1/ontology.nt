@@ -1,5 +1,5 @@
 <https://w3id.org/pmd/ont_pub_tmplt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/pmd/ont_pub_tmplt> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/pmd/ont_pub_tmplt/1.0.0> .
+<https://w3id.org/pmd/ont_pub_tmplt> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/pmd/ont_pub_tmplt/1.0.1> .
 <https://w3id.org/pmd/ont_pub_tmplt> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov-o-inverses-20130430> .
 <https://w3id.org/pmd/ont_pub_tmplt> <http://purl.org/dc/elements/1.1/creator> "John Doe" .
 <https://w3id.org/pmd/ont_pub_tmplt> <http://purl.org/dc/terms/created> "2023-11-21" .
