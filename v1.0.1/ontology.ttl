@@ -57,7 +57,9 @@
                                                             owl:inverseOf <https://w3id.org/pmd/ont_pub_tmplt/exampleRelation> ;
                                                             rdfs:domain <https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> ;
                                                             rdfs:range <https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> ;
-                                                            rdfs:label "has exampleInverseRelation"@en ;
+                                                            <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                                                            <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: John Doe" ;
+                                                            rdfs:label "Example Inverse Relation"@en ;
                                                             <http://www.w3.org/2004/02/skos/core#definition> "An example inverse relation"@en .
 
 
@@ -65,7 +67,9 @@
 <https://w3id.org/pmd/ont_pub_tmplt/exampleRelation> rdf:type owl:ObjectProperty ;
                                                      rdfs:domain <https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> ;
                                                      rdfs:range <https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> ;
-                                                     rdfs:label "has exampleRelation"@en ;
+                                                     <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                                                     <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: John Doe" ;
+                                                     rdfs:label "Example Relation"@en ;
                                                      <http://www.w3.org/2004/02/skos/core#definition> "An example relation"@en .
 
 
