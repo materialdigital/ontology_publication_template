@@ -1,8 +1,11 @@
 [ {
-  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
@@ -16,25 +19,25 @@
 }, {
   "@id" : "https://w3id.org/pmd/ont_pub_tmplt",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "John Doe"
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Doe J. (1960) Foo Ontology. Journal of Everything, 42(42), 3-42."
   } ],
   "http://purl.org/dc/terms/created" : [ {
-    "@value" : "2023-11-21"
+    "@value" : "2023-12-15"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://orcid.org/0000-0000-0000-0000"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "http://creativecommons.org/licenses/by/4.0/"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
-    "@value" : "Example Ontology Stub"
+    "@value" : "Ontology Publication Template for the PMD"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Example Ontology Stub"
-  } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://www.w3.org/ns/prov-o-inverses-20130430"
+    "@value" : "This is an example ontology to help PMD partner projects to get an overview over the formal requirements imposed by HAP 4. \n                                           It's meant as a blueprint for updating the partner projects ontologies and thus does not carry any relevant concepts. This \n                                           file is related to the github repository https://github.com/materialdigital/ontology_publication_template where there is \n                                           more information about how to work with this example."
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://w3id.org/pmd/ont_pub_tmplt/1.0.0"
@@ -43,54 +46,45 @@
     "@value" : "1.0.0"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub",
+  "@id" : "https://w3id.org/pmd/ont_pub_tmplt/ExampleClass",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/pmd/ont_pub_tmplt"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Example class stub"
+    "@value" : "Example Class"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "An example Class"
+    "@value" : "An example for a class definition in the ontology file. It should at least have some kind of label and a defition"
   } ]
 }, {
   "@id" : "https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub"
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pmd/ont_pub_tmplt"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has exampleInverseRelation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/exampleRelation"
+    "@value" : "Example Inverse Relation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "An example inverse relation"
+    "@value" : "An example for an inverse object relation definition in the ontology file. It should at least have some kind of label and a defition"
   } ]
 }, {
   "@id" : "https://w3id.org/pmd/ont_pub_tmplt/exampleRelation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub"
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pmd/ont_pub_tmplt"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has exampleRelation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub"
+    "@value" : "Example Relation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "An example relation"
+    "@value" : "An example for an object relation definition in the ontology file. It should at least have some kind of label and a defition"
   } ]
 } ]

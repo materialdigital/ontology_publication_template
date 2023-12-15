@@ -8,24 +8,31 @@
 
 <https://w3id.org/pmd/ont_pub_tmplt> rdf:type owl:Ontology ;
                                       owl:versionIRI <https://w3id.org/pmd/ont_pub_tmplt/1.0.0> ;
-                                      owl:imports <http://www.w3.org/ns/prov-o-inverses-20130430> ;
-                                      <http://purl.org/dc/elements/1.1/creator> "John Doe" ;
-                                      <http://purl.org/dc/terms/created> "2023-11-21" ;
+                                      <http://purl.org/dc/terms/bibliographicCitation> "Doe J. (1960) Foo Ontology. Journal of Everything, 42(42), 3-42." ;
+                                      <http://purl.org/dc/terms/created> "2023-12-15" ;
+                                      <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0000-0000-0000> ;
                                       <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
-                                      <http://purl.org/dc/terms/title> "Example Ontology Stub"@en ;
-                                      rdfs:comment "Example Ontology Stub"@en ;
+                                      <http://purl.org/dc/terms/title> "Ontology Publication Template for the PMD"@en ;
+                                      rdfs:comment """This is an example ontology to help PMD partner projects to get an overview over the formal requirements imposed by HAP 4. 
+                                           It's meant as a blueprint for updating the partner projects ontologies and thus does not carry any relevant concepts. This 
+                                           file is related to the github repository https://github.com/materialdigital/ontology_publication_template where there is 
+                                           more information about how to work with this example."""@en ;
                                       owl:versionInfo "1.0.0" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
-###  http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
@@ -46,30 +53,27 @@
 
 ###  https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation
 <https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation> rdf:type owl:ObjectProperty ;
-                                                            owl:inverseOf <https://w3id.org/pmd/ont_pub_tmplt/exampleRelation> ;
-                                                            rdfs:domain <https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> ;
-                                                            rdfs:range <https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> ;
-                                                            rdfs:label "has exampleInverseRelation"@en ;
-                                                            <http://www.w3.org/2004/02/skos/core#definition> "An example inverse relation"@en .
+                                                            rdfs:isDefinedBy <https://w3id.org/pmd/ont_pub_tmplt> ;
+                                                            rdfs:label "Example Inverse Relation"@en ;
+                                                            <http://www.w3.org/2004/02/skos/core#definition> "An example for an inverse object relation definition in the ontology file. It should at least have some kind of label and a defition"@en .
 
 
 ###  https://w3id.org/pmd/ont_pub_tmplt/exampleRelation
 <https://w3id.org/pmd/ont_pub_tmplt/exampleRelation> rdf:type owl:ObjectProperty ;
-                                                     rdfs:domain <https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> ;
-                                                     rdfs:range <https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> ;
-                                                     rdfs:label "has exampleRelation"@en ;
-                                                     <http://www.w3.org/2004/02/skos/core#definition> "An example relation"@en .
+                                                     rdfs:isDefinedBy <https://w3id.org/pmd/ont_pub_tmplt> ;
+                                                     rdfs:label "Example Relation"@en ;
+                                                     <http://www.w3.org/2004/02/skos/core#definition> "An example for an object relation definition in the ontology file. It should at least have some kind of label and a defition"@en .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub
-<https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub> rdf:type owl:Class ;
-                                                      rdfs:isDefinedBy <https://w3id.org/pmd/ont_pub_tmplt> ;
-                                                      rdfs:label "Example class stub"@en ;
-                                                      <http://www.w3.org/2004/02/skos/core#definition> "An example Class"@en .
+###  https://w3id.org/pmd/ont_pub_tmplt/ExampleClass
+<https://w3id.org/pmd/ont_pub_tmplt/ExampleClass> rdf:type owl:Class ;
+                                                  rdfs:isDefinedBy <https://w3id.org/pmd/ont_pub_tmplt> ;
+                                                  rdfs:label "Example Class"@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> "An example for a class definition in the ontology file. It should at least have some kind of label and a defition"@en .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

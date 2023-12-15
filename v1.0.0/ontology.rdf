@@ -1,23 +1,24 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/pmd/ont_pub_tmplt#"
      xml:base="https://w3id.org/pmd/ont_pub_tmplt"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/ont_pub_tmplt">
         <owl:versionIRI rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/1.0.0"/>
-        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-inverses-20130430"/>
-        <dc:creator>John Doe</dc:creator>
-        <terms:created>2023-11-21</terms:created>
+        <terms:bibliographicCitation>Doe J. (1960) Foo Ontology. Journal of Everything, 42(42), 3-42.</terms:bibliographicCitation>
+        <terms:created>2023-12-15</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0000-0000-0000"/>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <terms:title xml:lang="en">Example Ontology Stub</terms:title>
-        <rdfs:comment xml:lang="en">Example Ontology Stub</rdfs:comment>
+        <terms:title xml:lang="en">Ontology Publication Template for the PMD</terms:title>
+        <rdfs:comment xml:lang="en">This is an example ontology to help PMD partner projects to get an overview over the formal requirements imposed by HAP 4. 
+                                           It&apos;s meant as a blueprint for updating the partner projects ontologies and thus does not carry any relevant concepts. This 
+                                           file is related to the github repository https://github.com/materialdigital/ontology_publication_template where there is 
+                                           more information about how to work with this example.</rdfs:comment>
         <owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
     
@@ -35,10 +36,10 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/creator -->
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
@@ -46,6 +47,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
@@ -86,11 +94,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/ont_pub_tmplt/exampleInverseRelation">
-        <owl:inverseOf rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/exampleRelation"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub"/>
-        <rdfs:range rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub"/>
-        <rdfs:label xml:lang="en">has exampleInverseRelation</rdfs:label>
-        <skos:definition xml:lang="en">An example inverse relation</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ont_pub_tmplt"/>
+        <rdfs:label xml:lang="en">Example Inverse Relation</rdfs:label>
+        <skos:definition xml:lang="en">An example for an inverse object relation definition in the ontology file. It should at least have some kind of label and a defition</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -99,10 +105,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/ont_pub_tmplt/exampleRelation">
-        <rdfs:domain rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub"/>
-        <rdfs:range rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub"/>
-        <rdfs:label xml:lang="en">has exampleRelation</rdfs:label>
-        <skos:definition xml:lang="en">An example relation</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ont_pub_tmplt"/>
+        <rdfs:label xml:lang="en">Example Relation</rdfs:label>
+        <skos:definition xml:lang="en">An example for an object relation definition in the ontology file. It should at least have some kind of label and a defition</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -119,13 +124,13 @@
     
 
 
-    <!-- https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub -->
+    <!-- https://w3id.org/pmd/ont_pub_tmplt/ExampleClass -->
 
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ont_pub_tmplt/ExampleClassStub">
+    <owl:Class rdf:about="https://w3id.org/pmd/ont_pub_tmplt/ExampleClass">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ont_pub_tmplt"/>
-        <rdfs:label xml:lang="en">Example class stub</rdfs:label>
-        <skos:definition xml:lang="en">An example Class</skos:definition>
+        <rdfs:label xml:lang="en">Example Class</rdfs:label>
+        <skos:definition xml:lang="en">An example for a class definition in the ontology file. It should at least have some kind of label and a defition</skos:definition>
     </owl:Class>
 </rdf:RDF>
 
